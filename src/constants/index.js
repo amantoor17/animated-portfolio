@@ -70,7 +70,7 @@ export const PROJECTS = [
     description:
       "The website displays weather data for your current city as well as any city you search for. The data is fetched using an API call.",
     technologies: ["HTML", "CSS", "JavaScript"],
-	githubPage: "https://amantoor17.github.io/Weather-app/",
+	githubPage: "https://amantoor17.github.io/dev-detective/",
   },
   {
     title: "Weather App",

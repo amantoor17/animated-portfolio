@@ -76,7 +76,7 @@ const Hero = () => {
                     </motion.p>
                     <motion.a 
                     variants={childVariants}
-                    // href='/'
+                    href='https://amantoor17.github.io/resume/CV_AmanToor_IT_9717665748.pdf'
                     target='_blank'
                     className='p-3 pl-8 select-none uppercase text-sm mb-10before:ease relative h-12 w-40 overflow-hidden border
                     border-green-500 bg-green-500 text-white shadow-2xl transition-all before:absolute before:right-0 before:top-0
