@@ -2,6 +2,8 @@
 import profilePic from '../assets/A2.jpg';
 import {HERO_CONTENT} from "../constants";
 import { motion } from 'framer-motion';
+import Spline from '@splinetool/react-spline';
+
 
 const containerVariants = {
     hidden: { opacity: 0, x: -100 },
@@ -40,13 +42,16 @@ const Hero = () => {
     <div className='pb-4 lg:mb-36'>
         <div className='flex flex-wrap lg:flex-row-reverse'>
             <div className='w-full lg:w-1/2'>
-                <div className='flex justify-center lg:p-8'>
+                <div className='flex justify-center items-center lg:p-8'>
+                {/* <Spline scene="https://prod.spline.design/MAi0j-oYCbmsGarG/scene.splinecode" /> */}
                     <motion.img src={profilePic}
                     alt='Aman'
                     className='border border-stone-900 ring-violet-300 ring-1 shadow-fuchsia-950 shadow-2xl '
                     width={400}
                     height={400}
                     drag
+                    dragConstraints={{ left: 0, top: 0, right: 0, bottom: 0}}
+                    dragElastic={0.5}
                     variants={photoAnimate}
                     initial="hidden"
                     animate="visible"
